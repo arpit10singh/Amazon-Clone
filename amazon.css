@@ -47,7 +47,7 @@
     display: flex;
     justify-content: space-evenly;
     background-color: pink;
-    width: 620px;
+    width: 870px;
     height: 40px;
     border-radius: 4px;
 }
@@ -59,13 +59,14 @@
     border-bottom-left-radius: 4px;
     border: none;
 }
+
 .search-input {
     width: 100%;
     font-size: 1rem;
     border: none;
 }
 .search-icon {
-    width: 45px;
+    width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,27 +103,63 @@ span {
     color: white;
     align-items: center;
     justify-content: space-evenly;
+    padding-right: 850px;
 }
 .panel-ops p {
     display: inline;
     margin-left: 15px;
+    font-size: 0.90rem;
+}
+.panel-ops p:hover {
+    border: 1.5px solid white;
+}
+
+.panel-all:hover {
+    border: 1.5px solid white;
 }
 .panel-ops {
     width: 70%;
     font-size: 0.85rem;
 }
+
+
 .panel-deals {
     font-size: 0.9rem;
     font-weight: 700;
 }
 /* hero section */
 .hero-section {
-    background-image: url("hero_image.jpg");
+    background-image: url("heroine.jpg");
     background-size: cover;
     height: 350px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    
+    background-repeat: no-repeat;
+    animation-name: slide;
+    animation-duration: 30s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+    25% {
+        background-image: url("new\ year.jpg");
+        background-size: cover;
+    }
+    50% {
+        background-image: url("games.jpg");
+        background-size: cover;
+    }
+    75% {
+        background-image: url("toys.jpg");
+        background-size: cover;
+    }
+    100% {
+        background-image: url("kitchen.jpg");
+        background-size: cover;
+    }
 }
 .hero-msg {
     background-color: white;
@@ -167,9 +204,6 @@ span {
     color: #007185;
 }
 /* footer */
-footer {
-    margin-top: 15px;
-}
 .foot-panel1 {
     background-color: #37475a;
     color: white;
@@ -177,7 +211,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 11px;
+    font-size: 13px;
 }
 .foot-panel2 {
     background-color: #222f3d;
@@ -189,27 +223,67 @@ footer {
 ul {
     margin-top: 20px;
 }
+ul p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
 ul a {
     display: block;
-    font-size: 0.85rem;
+    font-size: 14px;
     margin-top: 10px;
     color: #dddddd;
 }
 .foot-panel3 {
     background-color: #222f3d;
     color: white;
-    border-top: 0.5px solid white;
-    height: 68px;
+    border-top: 0.1px solid #cccc;
+    height: 110px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .logo {
     background-image: url("amazon_logo.png");
     background-size: cover;
     height: 50px;
     width: 100px;
+    margin-right: 200px;
 }
+
+.language {
+    border: 0.3px solid #cccc;
+    border-radius: 4px;
+    width: 80px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.usd {
+    border: 0.3px solid #cccc;
+    border-radius: 4px;
+    width: 140px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.us {
+    border: 0.3px solid #cccc;
+    border-radius: 4px;
+    width: 120px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .foot-panel4 {
     background-color: #0f1111;
     color: white;
